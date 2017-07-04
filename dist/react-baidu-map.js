@@ -91,7 +91,7 @@
 	    value: function componentDidMount() {
 	      var _this2 = this;
 
-	      this._map = new BMap.Map(this.id);
+	      this._map = new window.BMap.Map(this.id);
 	      this._map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
 	      this._local = new BMap.LocalSearch(this._map, {
 	        renderOptions: { map: this._map },
